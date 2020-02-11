@@ -25,3 +25,8 @@ header{
 .fondoCopyEnlaces{
     background-color: #222831;
 }
+
+tr td img{
+    width: 25px;
+    height: 25px;
+}
