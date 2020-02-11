@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
+<<<<<<< HEAD
     return view('layouts/master');
+=======
+    return view('agregarProducto');
+>>>>>>> master
 });
