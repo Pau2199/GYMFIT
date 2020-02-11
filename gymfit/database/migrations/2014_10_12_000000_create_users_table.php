@@ -14,8 +14,7 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->string('NIF')->primarykey();
-            $table->string('idDirection')->foreign('id')->on('directions');
+            $table->string('nif')->primary();
             $table->string('name');
             $table->string('subname 1');
             $table->string('subname 2');

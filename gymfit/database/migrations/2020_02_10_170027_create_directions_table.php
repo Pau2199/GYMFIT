@@ -14,12 +14,13 @@ class CreateDirectionsTable extends Migration
     public function up()
     {
         Schema::create('directions', function (Blueprint $table) {
-            $table->increments('id') -> primary('');
+            $table->increments('id') -> primary();
             $table->String('street');
             $table->String('locality');
             $table->integer('number');
             $table->integer('postal code');
             $table->String('floor');
+            $table->String('door') -> nullable();
             $table->String('type');
             $table->String('province');
             $table->timestamps();

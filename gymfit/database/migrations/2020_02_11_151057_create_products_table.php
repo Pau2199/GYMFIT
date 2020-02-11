@@ -20,7 +20,7 @@ class CreateProductsTable extends Migration
             $table->text('description');
             $table->float('price');
             $table->integer('iva');
-            $table->integer('discount');
+            $table->integer('discount')->nullable();
             $table->timestamps();
         });
     }
