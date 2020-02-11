@@ -14,7 +14,7 @@ class CreateLineItemsTable extends Migration
     public function up()
     {
         Schema::create('lineItems', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id') -> primary();
             $table->float('price');
             $table->integer('quantity');
             $table->timestamps();

@@ -14,7 +14,7 @@ class CreateDeliveriesTable extends Migration
     public function up()
     {
         Schema::create('deliveries', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id') -> primary();
             $table->String('payMethod');
             $table->date('deliverieDate');
             $table->float('totalPrice');

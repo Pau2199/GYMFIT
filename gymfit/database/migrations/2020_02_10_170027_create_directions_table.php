@@ -14,7 +14,7 @@ class CreateDirectionsTable extends Migration
     public function up()
     {
         Schema::create('directions', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id') -> primary('');
             $table->String('street');
             $table->String('locality');
             $table->integer('number');

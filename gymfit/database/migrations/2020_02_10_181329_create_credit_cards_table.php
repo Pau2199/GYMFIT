@@ -14,7 +14,7 @@ class CreateCreditCardsTable extends Migration
     public function up()
     {
         Schema::table('creditCards', function (Blueprint $table) {
-            $table->integer('card number')->primaryKey();
+            $table->integer('card number')->primary();
             $table->String('owner');
             $table->integer('cvv');
             $table->Date('caducity date');
