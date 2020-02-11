@@ -14,7 +14,14 @@ header{
 .redesSociales{
     width: 40px;
     height: 40px;
+    margin-left: 2%;
 }
 .footer{
     background-color: #29a19c;
+}
+.colorLetra{
+    color: #29a19c;
+}
+.fondoCopyEnlaces{
+    background-color: #222831;
 }
