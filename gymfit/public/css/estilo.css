@@ -9,6 +9,7 @@ header{
     height: 30px;
 }
 .logotipo{
+    width: 170px;
     height: 100px;
 }
 .redesSociales{
@@ -25,8 +26,20 @@ header{
 .fondoCopyEnlaces{
     background-color: #222831;
 }
+<<<<<<< HEAD
 
 tr td img{
     width: 25px;
     height: 25px;
+=======
+.form-group{
+    margin: 5%;
+}
+.imagenCarrusel{
+    height: 350px;
+}
+.imgaenesProductos{
+    width: 300px;
+    height: 300px;
+>>>>>>> master
 }
