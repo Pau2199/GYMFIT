@@ -11,10 +11,34 @@
     </head>
     <body>
         <div class="container">
-            <div class="row justify-content-around">
-                <div class="text-center">
-                    <h1 class="m-5">Lista de Productos</h1>
-                    <div class="table-responsive-sm">
+            <div class="row justify-content-around text-center">
+                <h1 class="m-5 text-center p-3">Lista de Productos</h1>
+                <div class="col-md-8 my-3">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Categoria</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Seleccione una categoria...</option>
+                                <option>Ropa</option>
+                                <option>Accesorios</option>
+                                <option>Maquinas</option>
+                            </select>
+                        </div> 
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Subcategoria</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Seleccione una subcategoria</option>
+                                <option>Camisetas</option>
+                                <option>Sudaderas</option>
+                                <option>Tops</option>
+                                <option>Pantalones</option>
+                                <option>Calzado</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class=" table-responsive-sm">
                         <table class="table">
                             <thead class="thead-dark">
                                 <tr>
@@ -88,11 +112,8 @@
                             </tbody>
                         </table>
                     </div>
-
-
                 </div>
             </div>
         </div>
-
     </body>
 </html>

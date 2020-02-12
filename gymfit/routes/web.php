@@ -12,11 +12,7 @@
 */
 
 Route::get('/', function () {
-<<<<<<< HEAD
     
     return view('crudProductos');
-    
-=======
-    return view('index');
->>>>>>> master
+
 });
