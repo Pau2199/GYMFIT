@@ -1,16 +1,21 @@
 header{
     background-color: #222831;
 }
-.letraCesta{
-    color: white;
-    font-family: 'https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap';
-}
 .svgTamanyo{
     height: 30px;
 }
 .logotipo{
-    width: 170px;
-    height: 100px;
+    width: 150px;
+    height: 70px;
+}
+.logoTipoMovil{
+    width: 200px;
+    height: 90px;
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+.iconosMovil{
+    margin-top: 20%;
 }
 .redesSociales{
     width: 40px;
@@ -35,4 +40,7 @@ header{
 .imgaenesProductos{
     width: 300px;
     height: 300px;
+}
+.search{
+    margin-top: 2%;
 }
