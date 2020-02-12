@@ -13,6 +13,6 @@
 
 Route::get('/', function () {
     
-    return view('crudProductos');
+    return view('crudUsuarios');
 
 });

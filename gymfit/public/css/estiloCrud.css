@@ -1,8 +1,12 @@
-tr td img{
+td img{
     width: 25px;
     height: 25px;
 }
 
 tbody tr:hover{
     background-color: #a3f7bf;
+}
+
+#buscarProducto{
+    width: 75%;
 }

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Document</title>
-        <link rel="stylesheet" href="{{asset('css/crudProducto.css')}}" type="text/css">
+        <link rel="stylesheet" href="{{asset('css/estiloCrud.css')}}" type="text/css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -12,13 +12,13 @@
     <body>
         <div class="container-fluid">
             <h1 class="m-5 text-center p-1">Lista de Usuarios</h1>
-            <div class="row justify-content-around text-center m-5">
+            <div class="row justify-content-center text-center m-5">
 
-                <div class="col-md-6 col-sm-12 my-3">
+                <div class="col-md-8 col-sm-12 my-1">
                     <form action="">
-                        <div class="form-inline my-5">
-                            <input class="form-control mr-sm-2 w-75" type="text" placeholder="Buscar producto" aria-label="Buscar">
-                            <button class="btn btn-outline-success ml-5" type="submit">Buscar</button>
+                        <div class="form-inline mb-5">
+                            <input class="form-control mr-sm-2 w-75" type="text" placeholder="Buscar usuario" aria-label="Buscar">
+                            <button class="btn btn-outline-success ml-sm-3" type="submit" id="buscarUsuario">Buscar</button>
                         </div>
                     </form>
                 </div>
