@@ -11,26 +11,51 @@
     </head>
     <body>
         @include('partes.cabecera')
-        <div id="carouselExampleControls" class="carousel slide bg-dark" data-ride="carousel" data-interval="4000">
+        <div id="carouselImagenes" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselImagenes" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselImagenes" data-slide-to="1"></li>
+                <li data-target="#carouselImagenes" data-slide-to="2"></li>
+            </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block imagenCarrusel w-100 imagenCarrusel" src="{{asset('img/prueba.jpg')}}" alt="First slide">
+                    <img class="d-block w-100 imagenCarrusel" src="{{asset('img/prueba.jpg')}}" alt="Primera Imagen">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block imagenCarrusel w-100 imagenCarrusel" src="{{asset('img/twitter.png')}}" alt="Second slide">
+                    <img class="d-block w-100 imagenCarrusel" src="{{asset('img/gimnasio2.jpg')}}" alt="Segunda Imagen">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block imagenCarrusel w-100 imagenCarrusel" src="{{asset('img/logo.png')}}" alt="Third slide">
+                    <img class="d-block w-100 imagenCarrusel" src="{{asset('img/logo.png')}}" alt="Tercera Imagen">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselImagenes" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselImagenes" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
             </a>
         </div>
+        <h2 class="text-center text-uppercase font-weight-bold mt-2">Más vendidos</h2>
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-3">
+                    <div>
+                        <img class="imgaenesProductos" src="{{asset('img/productos/pantalones.jpg')}}" alt="pantalones">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <img class="imgaenesProductos" src="{{asset('img/productos/pantalones.jpg')}}" alt="pantalones">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <img class="imgaenesProductos" src="{{asset('img/productos/pantalones.jpg')}}" alt="pantalones">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        @include('partes.footer')
     </body>
 </html>
