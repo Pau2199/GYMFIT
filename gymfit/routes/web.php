@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('agregarProducto');
+<<<<<<< HEAD
+    
+    return view('crudProductos');
+    
+=======
+    return view('index');
+>>>>>>> master
 });

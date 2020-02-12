@@ -1,0 +1,45 @@
+header{
+    background-color: #222831;
+}
+.letraCesta{
+    color: white;
+    font-family: 'https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap';
+}
+.svgTamanyo{
+    height: 30px;
+}
+.logotipo{
+    width: 170px;
+    height: 100px;
+}
+.redesSociales{
+    width: 40px;
+    height: 40px;
+    margin-left: 2%;
+}
+.footer{
+    background-color: #29a19c;
+}
+.colorLetra{
+    color: #29a19c;
+}
+.fondoCopyEnlaces{
+    background-color: #222831;
+}
+<<<<<<< HEAD
+
+tr td img{
+    width: 25px;
+    height: 25px;
+=======
+.form-group{
+    margin: 5%;
+}
+.imagenCarrusel{
+    height: 350px;
+}
+.imgaenesProductos{
+    width: 300px;
+    height: 300px;
+>>>>>>> master
+}
