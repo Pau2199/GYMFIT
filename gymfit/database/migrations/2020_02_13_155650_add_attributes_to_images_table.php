@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCreditCardsTable extends Migration
+class AddAttributesToImagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateCreditCardsTable extends Migration
      */
     public function up()
     {
-        Schema::table('creditCards', function (Blueprint $table) {
-            $table->integer('card number')->primary();
-            $table->String('owner');
-            $table->integer('cvv');
-            $table->Date('caducity date');
+        Schema::table('images', function (Blueprint $table) {
+            $table->bigInteger('idProduct')->foreign()->references('id')->on('products');
         });
     }
 
@@ -28,8 +25,9 @@ class CreateCreditCardsTable extends Migration
      */
     public function down()
     {
-        Schema::table('creditCards', function (Blueprint $table) {
-            //
+        Schema::table('images', function (Blueprint $table) {
+            $table->dropForeign('idProduct');
+            $table->dropColumn('idProduct');
         });
     }
 }
