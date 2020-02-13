@@ -14,6 +14,7 @@
 Route::get('/', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     return view('crudProductos');
     
@@ -23,4 +24,9 @@ Route::get('/', function () {
 =======
     return view('vistaProducto');
 >>>>>>> pau
+=======
+    
+    return view('crudUsuarios');
+
+>>>>>>> Alex
 });
