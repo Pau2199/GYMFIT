@@ -6,25 +6,25 @@
             <form action="">
                 <div class="form-group">
                     <label for="nombre" class="font-weight-bold">Nombre Producto</label>
-                    <input type="text" class="form-control" required placeholder="Escriba el nombre del producto aqui...">
+                    <input type="text" name="nombre" class="form-control" required placeholder="Escriba el nombre del producto aqui...">
                     <!--                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
                 </div>                        
                 <div class="form-group">
                     <label for="marca" class="font-weight-bold">Marca del Producto</label>
-                    <input type="text" class="form-control" required placeholder="Escriba la marca del producto aqui...">
+                    <input type="text" name="marca" class="form-control" required placeholder="Escriba la marca del producto aqui...">
                 </div>
                 <div class="form-group">
                     <label for="descripcion" class="font-weight-bold">Descripción del Producto</label>
-                    <textarea class="form-control" rows="3" required placeholder="Escriba la descripcion del producto aqui..."></textarea>
+                    <textarea class="form-control" name="descripcion" rows="3" required placeholder="Escriba la descripcion del producto aqui..."></textarea>
                 </div>
 
                 <div class="form-group">
                     <label for="precio" class="font-weight-bold">Precio del Producto</label>
-                    <input type="number" class="form-control" required min="1" placeholder="Escriba el precio del producto aqui...">
+                    <input type="number" name="precio" class="form-control" required min="1" placeholder="Escriba el precio del producto aqui...">
                 </div>      
                 <div class="form-group">
-                    <label for="descuento" class="font-weight-bold">Descuento del Producto</label>
-                    <select class="form-control">
+                    <label for="descuento"  class="font-weight-bold">Descuento del Producto</label>
+                    <select class="form-control" name="descuento">
                         <option>0</option>
                         <option>5</option>
                         <option>10</option>
@@ -45,7 +45,7 @@
                 </div>
                 <div class="form-group">
                     <label for="categoria" class="font-weight-bold">Categoria del Producto</label>
-                    <select class="form-control">
+                    <select class="form-control" name="categoria">
                         <option>Selecciona una categoria</option>
                         <option>Ropa</option>
                         <option>Material</option>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="form-group">
                     <label for="subcategoria" class="font-weight-bold">Subcategoria del Producto</label>
-                    <select class="form-control">
+                    <select class="form-control" name="subcategoria">
                         <option>Selecciona una subcategoria</option>
                         <option>Camisetas</option>
                         <option>Sudadera</option>
@@ -64,7 +64,7 @@
                     </select>
                 </div>
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" name="enviar" class="btn btn-primary">Enviar</button>
                 </div>
 
             </form>
