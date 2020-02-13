@@ -12,7 +12,21 @@
 */
 
 Route::get('/', function () {
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    
+    return view('crudProductos');
+    
+=======
+    return view('index');
+>>>>>>> master
+=======
+    return view('vistaProducto');
+>>>>>>> pau
+=======
     
     return view('crudUsuarios');
 
+>>>>>>> Alex
 });
