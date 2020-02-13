@@ -3,28 +3,28 @@
 <div class="container">
     <div class="row p-5 justify-content-center">
         <div class="col-sm-12 col-md-8">
-            <form action="">
+            <form action="" id="formProducto">
                 <div class="form-group">
                     <label for="nombre" class="font-weight-bold">Nombre Producto</label>
-                    <input type="text" name="nombre" class="form-control" required placeholder="Escriba el nombre del producto aqui...">
+                    <input type="text" name="nombre" class="form-control formProducto" required id="nombreProducto" placeholder="Escriba el nombre del producto aqui...">
                     <!--                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
                 </div>                        
                 <div class="form-group">
                     <label for="marca" class="font-weight-bold">Marca del Producto</label>
-                    <input type="text" name="marca" class="form-control" required placeholder="Escriba la marca del producto aqui...">
+                    <input type="text" id="marcaProducto" name="marca" class="form-control formProducto" required placeholder="Escriba la marca del producto aqui...">
                 </div>
                 <div class="form-group">
                     <label for="descripcion" class="font-weight-bold">Descripción del Producto</label>
-                    <textarea class="form-control" name="descripcion" rows="3" required placeholder="Escriba la descripcion del producto aqui..."></textarea>
+                    <textarea class="form-control formProducto" id="desProducto" name="descripcion" rows="3" required placeholder="Escriba la descripcion del producto aqui..."></textarea>
                 </div>
 
                 <div class="form-group">
                     <label for="precio" class="font-weight-bold">Precio del Producto</label>
-                    <input type="number" name="precio" class="form-control" required min="1" placeholder="Escriba el precio del producto aqui...">
+                    <input type="number" id="precioProducto" name="precio" class="form-control formProducto" required min="1" placeholder="Escriba el precio del producto aqui...">
                 </div>      
                 <div class="form-group">
                     <label for="descuento"  class="font-weight-bold">Descuento del Producto</label>
-                    <select class="form-control" name="descuento">
+                    <select class="form-control formProducto" name="descuento" id="descuentoProducto">
                         <option>0</option>
                         <option>5</option>
                         <option>10</option>
@@ -45,7 +45,7 @@
                 </div>
                 <div class="form-group">
                     <label for="categoria" class="font-weight-bold">Categoria del Producto</label>
-                    <select class="form-control" name="categoria">
+                    <select class="form-control formProducto" name="categoria" id="categoriaProducto">
                         <option>Selecciona una categoria</option>
                         <option>Ropa</option>
                         <option>Material</option>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="form-group">
                     <label for="subcategoria" class="font-weight-bold">Subcategoria del Producto</label>
-                    <select class="form-control" name="subcategoria">
+                    <select class="form-control formProducto" name="subcategoria" id="subcategoriaProducto">
                         <option>Selecciona una subcategoria</option>
                         <option>Camisetas</option>
                         <option>Sudadera</option>
