@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddForeingKeyToUserTable extends Migration
+class AddForeingToAddressTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class AddForeingKeyToUserTable extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->foreign('address_id')->references('id')->on('address')->onDelete('cascade');
+        Schema::table('address', function (Blueprint $table) {
+        $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
@@ -25,8 +25,8 @@ class AddForeingKeyToUserTable extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->dropForeign('users_address_id_foreign');
+        Schema::table('address', function (Blueprint $table) {
+            $table->dropForeign('address_user_id_foreign');
         });
     }
 }

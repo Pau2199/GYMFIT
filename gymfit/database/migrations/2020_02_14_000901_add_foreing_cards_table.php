@@ -14,7 +14,7 @@ class AddForeingCardsTable extends Migration
     public function up()
     {
         Schema::table('cards', function (Blueprint $table) {
-            $table->foreign('idUsuario')->references('nif')->on('users')->onDelete('cascade');
+            $table->foreign('idUsuario')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

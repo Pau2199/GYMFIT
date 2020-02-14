@@ -18,7 +18,7 @@ class CreateOrdersTable extends Migration
             $table->string('payment_methos');
             $table->timestamp('order_date');
             $table->float('full_price');
-            $table->string('idUsuario',100);
+            $table->bigInteger('idUsuario')->unsigned();
             $table->timestamps();
         });
     }

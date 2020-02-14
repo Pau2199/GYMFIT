@@ -22,7 +22,9 @@ class CreateAddressTable extends Migration
             $table->integer('floo');
             $table->string('type');
             $table->string('country');
+            $table->bigInteger('user_id')->unsigned();
             $table->timestamps();
+
         });
     }
 
