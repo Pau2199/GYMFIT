@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('vistaProducto');
+Route::get('/', function(){
+    return view('index');
 });
+Route::get('/agregarProducto', 'ProductosController@store');
+
+
