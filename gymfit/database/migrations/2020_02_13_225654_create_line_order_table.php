@@ -15,8 +15,8 @@ class CreateLineOrderTable extends Migration
     {
         Schema::create('line_order', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('cantidad');
-            $table->float('precio');
+            $table->integer('quantity');
+            $table->float('price');
             $table->bigInteger('idPedido')->unsigned();
             $table->bigInteger('idProducto')->unsigned();
             $table->timestamps();

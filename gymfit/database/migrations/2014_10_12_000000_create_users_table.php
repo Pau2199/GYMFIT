@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('name',100);
             $table->string('firts_surname',100);
             $table->string('second_surname',100);
-            $table->string('rol',100);
+            $table->string('role',100);
             $table->bigInteger('address_id')->unsigned();
         });
     }
