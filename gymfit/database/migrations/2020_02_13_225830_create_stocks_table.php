@@ -15,9 +15,9 @@ class CreateStocksTable extends Migration
     {
         Schema::create('stocks', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('cantidad');
-            $table->string('color')->nullable();
-            $table->string('talla')->nullable();
+            $table->integer('quantity');
+            $table->string('colour')->nullable();
+            $table->string('size')->nullable();
             $table->bigInteger('idProducto')->unsigned();
             $table->timestamps();
         });
