@@ -59,8 +59,8 @@
                         <option>Camisetas</option>
                         <option>Sudadera</option>
                         <option>Tops</option>
-                        <option>Zapatillas</option>
                         <option>Pantalones</option>
+                        <option>Calzado</option>
                     </select>
                 </div>
                 <div class="text-center">
