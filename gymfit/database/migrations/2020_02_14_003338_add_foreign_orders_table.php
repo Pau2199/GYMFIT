@@ -14,7 +14,7 @@ class AddForeignOrdersTable extends Migration
     public function up()
     {
         Schema::table('orders', function (Blueprint $table) {
-            //
+            $table->foreign('idUsuario')->references('nif')->on('users')->onDelete('cascade');
         });
     }
 
@@ -26,7 +26,7 @@ class AddForeignOrdersTable extends Migration
     public function down()
     {
         Schema::table('orders', function (Blueprint $table) {
-            //
+            $table->dropForeign('orders_idUsuario_foreign');
         });
     }
 }
