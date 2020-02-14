@@ -11,30 +11,10 @@
 |
 */
 
-<<<<<<< HEAD
-Route::get('/', function () {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-    return view('crudProductos');
-    
-=======
-    return view('index');
->>>>>>> master
-=======
-    return view('vistaProducto');
->>>>>>> pau
-=======
-    
-    return view('crudUsuarios');
-
->>>>>>> Alex
-=======
 Route::get('/', function(){
     return view('index');
->>>>>>> pau
 });
-Route::get('/agregarProducto', 'ProductosController@store');
+Route::get('/agregarProducto', 'ProductosController@prueba');
+Route::get('/MostrarProducto/{id}', 'ProductosController@show');
 
 
