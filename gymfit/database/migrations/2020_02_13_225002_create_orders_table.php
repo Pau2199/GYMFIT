@@ -18,6 +18,7 @@ class CreateOrdersTable extends Migration
             $table->string('metodo_pago');
             $table->timestamp('date_order');
             $table->float('precioTotal');
+            $table->string('idUsuarios',100);
             $table->timestamps();
         });
     }

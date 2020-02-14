@@ -18,6 +18,7 @@ class CreateCardsTable extends Migration
             $table->string('titular',100);
             $table->integer('cvv');
             $table->Date('date_caducity');
+            $table->string('idUsuario',100);
             $table->timestamps();
         });
     }
