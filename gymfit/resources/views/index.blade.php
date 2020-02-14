@@ -8,8 +8,8 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-md-block d-none w-100 imagenCarrusel" src="{{asset('img/definicionGymfit1.jpg')}}" alt="Primera Imagen">
-            <img class="d-md-none d-block w-100 imagenCarrusel" src="{{asset('img/definicionGymfit2.jpg')}}" alt="Primera Imagen">
+            <img class="d-md-block d-none w-100 imagenCarrusel" src="{{asset('img/definicionGymfit2.jpg')}}" alt="Primera Imagen">
+            <img class="d-md-none d-block w-100 imagenCarrusel" src="{{asset('img/definicionGymfit1.jpg')}}" alt="Primera Imagen">
         </div>
         <div class="carousel-item">
             <img class="d-md-block d-none w-100 imagenCarrusel" src="{{asset('img/ofertaPantalones1.jpg')}}" alt="Segunda Imagen">

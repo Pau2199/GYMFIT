@@ -11,6 +11,7 @@
 |
 */
 
+<<<<<<< HEAD
 Route::get('/', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -29,4 +30,11 @@ Route::get('/', function () {
     return view('crudUsuarios');
 
 >>>>>>> Alex
+=======
+Route::get('/', function(){
+    return view('index');
+>>>>>>> pau
 });
+Route::get('/agregarProducto', 'ProductosController@store');
+
+
