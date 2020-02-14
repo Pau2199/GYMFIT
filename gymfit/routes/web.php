@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
 
-    return view('vistaProducto');
+    return view('vistaCarrito');
 
 });
 

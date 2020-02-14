@@ -10,23 +10,23 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="container-fluid my-3">
+        <div class="container-fluid my-4">
             <div class="row">
-                <div class=" col-lg-6 col-md-12 col-sm-12 col-12 justify-content-center">
-                    <div id="carouselImagenes" class="carousel slide" data-ride="carousel">
+                <div class=" col-lg-7 col-md-12 col-sm-12 col-12 justify-content-center">
+                    <div id="carouselImagenes" class="carousel slide justify-content-center" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselImagenes" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselImagenes" data-slide-to="1"></li>
                             <li data-target="#carouselImagenes" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="img-fluid" src="{{asset('img/productos/pantalones-prueba.jpg')}}" alt="Primera Imagen">
+                            <div class="carousel-item active text-center">
+                                <img class="img-fluid text-center" src="{{asset('img/productos/pantalones-prueba.jpg')}}" alt="Primera Imagen">
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item text-center">
                                 <img class="img-fluid" src="{{asset('img/productos/pantalones-prueba.jpg')}}" alt="Segunda Imagen">
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item text-center">
                                 <img class="img-fluid" src="{{asset('img/productos/pantalones-prueba.jpg')}}" alt="Tercera Imagen">
                             </div>
                         </div>
@@ -38,7 +38,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12 my-3 justify-content-center">
+                <div class="col-lg-5 col-md-12 col-sm-12 col-12 my-3 justify-content-center">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 justify-content-center">
                             <h2>PANTALONES NEGROS</h2>
@@ -47,7 +47,7 @@
                             <hr>
                             <form action="#">
                                 <p>Elige la Talla:</p>
-                                <div class="row">
+                                <div class="row my-3">
                                     <div class="col-12 m-1 ">
                                         <div class="row justify-content-center">
                                             <div class="m-2">
@@ -70,17 +70,36 @@
                                             </div> 
                                         </div>
                                     </div>
+                                </div> 
+                                <p>Elige el color:</p>                               
+                                <div class="row my-3">
+                                    <div class="col-12 m-1 ">
+                                        <div class="row justify-content-center">
+                                            <div class="m-2">
+                                                <button class="btn btn-outline-info">Rojo</button>
+                                            </div>
+                                            <div class="m-2">
+                                                <button class="btn btn-outline-info">Azul</button>
+                                            </div>
+                                            <div class="m-2">
+                                                <button class="btn btn-outline-info">Negro</button>
+                                            </div>
+                                            <div class="m-2">
+                                                <button class="btn btn-outline-info">Amarilla</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <p class="mt-5">Elige cuantos quieres:</p>
                                 <div class="row justify-content-center text-center mt-5">
                                     <div class="col-md-3 col-3">
-                                        <button class="btn btn-secondary botonCantidad"><img src="{{asset('img/plus-solid.svg')}}" alt="plus"></button>  
+                                        <button class="btn btn-secondary botonCantidad"><img src="{{asset('img/minus-solid.svg')}}" alt="plus"></button>  
                                     </div>
                                     <div class="col-md-1 col-1 col-sm-3 my-2">
-                                        <span>0</span>
+                                        <span>1</span>
                                     </div>
                                     <div class="col-md-3 col-3 col-sm-3">
-                                        <button class="btn btn-secondary botonCantidad"><img src="{{asset('img/minus-solid.svg')}}" alt="minus"></button>
+                                        <button class="btn btn-secondary botonCantidad"><img src="{{asset('img/plus-solid.svg')}}" alt="minus"></button>
                                     </div>
                                 </div>
 
