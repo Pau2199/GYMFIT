@@ -48,12 +48,14 @@ class ProductController extends Controller
         $producto->idCategoria=DB::table('category')->select('id')->where('name', $request->category)->get()[0]->id;
         $producto->save();
 
-        $image = new Image;
         $file = $request->file('file');
-        Storage::disk('local')->put($request->category.'/'.$request->subCategory.'/'.$file->getClientOriginalName(),  \File::get($file));
-        $image->ruta = $request->category.'/'.$request->subCategory.'/'.$file->getClientOriginalName();
-        $image->idProducto=DB::table('products')->select('id')->where('name', $request->name)->get()[0]->id;
-        $image->save();
+        foreach ($file as $valor){
+            $image = new Image;
+            Storage::disk('local')->put($request->category.'/'.$request->subCategory.'/'.$valor->getClientOriginalName(),  \File::get($valor));
+            $image->ruta = $request->category.'/'.$request->subCategory.'/'.$valor->getClientOriginalName();
+            $image->idProducto=DB::table('products')->select('id')->where('name', $request->name)->get()[0]->id;
+            $image->save();   
+        }
     }
 
     /**
