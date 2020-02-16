@@ -15,14 +15,12 @@
 Route::get('/', function(){
     return view('index');
 });
-Route::get('/agregarProducto', 'ProductController@prueba');
+Route::get('/formAgregarProducto', 'ProductController@create');
+Route::post('/agregarProducto', 'ProductController@store');
 Route::get('/MostrarProducto/{id}', 'ProductController@show');
-
-
-
-
+Route::get('/crudProductos', function(){
+    return view('crudProductos');
+});
 
 Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
-
-

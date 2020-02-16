@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use DB;
+use App\Product;
+use App\Image;
 
 class ProductController extends Controller
 {
@@ -23,7 +27,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('agregarProducto');
     }
 
     /**
@@ -34,7 +38,22 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $producto = new Product;
+        $producto->name = $request->name;
+        $producto->brand = $request->brand;
+        $producto->description = $request->description;
+        $producto->price = $request->price;
+        $producto->iva = 21;
+        $producto->discount = $request->discount;
+        $producto->idCategoria=DB::table('category')->select('id')->where('name', $request->category)->get()[0]->id;
+        $producto->save();
+
+        $image = new Image;
+        $file = $request->file('file');
+        Storage::disk('local')->put($request->category.'/'.$request->subCategory.'/'.$file->getClientOriginalName(),  \File::get($file));
+        $image->ruta = $request->category.'/'.$request->subCategory.'/'.$file->getClientOriginalName();
+        $image->idProducto=DB::table('products')->select('id')->where('name', $request->name)->get()[0]->id;
+        $image->save();
     }
 
     /**
