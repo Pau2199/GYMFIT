@@ -66,7 +66,7 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        //
+        $productos = DB::select('SELECT * FROM products p , category c WHERE c.name = '.$id.' AND c.id = p.idCategoria');
     }
 
     /**
@@ -101,5 +101,10 @@ class ProductController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function peticionAjax(){
+        $valor = $_POST['categoria'];
+        return $valor;
     }
 }
