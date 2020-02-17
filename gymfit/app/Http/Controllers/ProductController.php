@@ -103,8 +103,7 @@ class ProductController extends Controller
         //
     }
 
-    public function peticionAjax(){
-        $valor = $_POST['categoria'];
-        return $valor;
+    public function peticionAjax($categoria){
+        return $categoria;
     }
 }
