@@ -35,17 +35,47 @@ class ProductosController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+    public function prueba()
+    {
+        $product = new Product;
+        $product->name = 'pedro';
+        $product->brand = 'manolo';
+        $product->description = 'asasasasas';
+        $product->price = 10.0;
+        $product->discount = 0;
+        $product->iva = 0;
+        $product->idCategoria = 1;
+        $product->save();
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     public function store(Request $request)
     {
-        product = new Product;
-        product = 'pedro'
-        product = 'manolo'
-        product = 'asasasasas'
-        product = 10.3
-        product = 0
-        product = 'prueba'
-        product = 'ninguna'
-        producto->save();
+        $product = new Product;
+        $product->name = 'pedro';
+        $product->brand = 'manolo';
+        $product->description = 'asasasasas';
+        $product->price = 10.0;
+        $product->discount = 0;
+        $product->iva = 0;
+        $product->idCategoria = 1;
+        $product->save();
     }
 
     /**
@@ -56,8 +86,12 @@ class ProductosController extends Controller
      */
     public function show($id)
     {
-        //
         
+        $productos = Product::all();
+        foreach($productos as $valor ){
+            echo $valor->name;
+        }
+
     }
 
     /**
