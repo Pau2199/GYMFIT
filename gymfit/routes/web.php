@@ -11,10 +11,22 @@
 |
 */
 
+<<<<<<< HEAD
+Route::get('/', function () {
+
+    return view('vistaCarrito');
+
+});
+
+Route::get('product/store', 'ProductController@store');
+
+Route::get('/agregarProducto', 'ProductosController@store');
+=======
 Route::get('/', function(){
     return view('index');
 });
 Route::get('/agregarProducto', 'ProductosController@prueba');
 Route::get('/MostrarProducto/{id}', 'ProductosController@show');
+>>>>>>> master
 
 
