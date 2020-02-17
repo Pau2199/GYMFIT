@@ -63,8 +63,16 @@
                         <option>Calzado</option>
                     </select>
                 </div>
+                <div class="form-group">
+                    <label class="font-weight-bold" for="arvhivo">Imagenes del producto</label>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="subirArchivo" name="file" multiple="">
+                        <label class="custom-file-label" for="customFile">Selecciona un archivo</label>
+                    </div>
+                </div>
                 <div class="text-center">
                     <button type="submit" name="enviar" class="btn btn-primary">Enviar</button>
+                    <button type="reset" name="reset" class="btn btn-primary">Resetear</button>
                 </div>
 
             </form>
