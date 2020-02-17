@@ -17,10 +17,12 @@ Route::get('/', function(){
 });
 Route::get('/formAgregarProducto', 'ProductController@create');
 Route::post('/agregarProducto', 'ProductController@store');
-Route::get('/MostrarProducto/{id}', 'ProductController@show');
-Route::get('/crudProductos', function(){
+//Route::get('/MostrarProducto/{id}', 'ProductController@show');
+Route::get('/mostrar', function(){
     return view('crudProductos');
 });
+
+Route::post('/mostrarProductos', 'ProductController@peticionAjax');
 
 Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
